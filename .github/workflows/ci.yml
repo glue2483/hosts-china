@@ -23,7 +23,8 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -a -m "bot commit files"
+          git add adguardhome.txt dnsmasq.conf
+          git commit -m "bot update files"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
